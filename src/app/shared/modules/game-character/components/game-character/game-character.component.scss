@@ -1,0 +1,53 @@
+.game-character {
+    position: relative;
+    width: 3vw;
+    height: 10vh;
+    background-color: orange;
+
+    section, figure { position: absolute; }
+
+    &__head {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: lime;
+        width: 40%;
+        height: 25%;
+    }
+
+    &__body {
+        width: 28%;
+        height: 25%;
+        left: 50%;
+        top: 25%;
+        transform: translateX(-50%);
+        background-color: red;
+    }
+
+    &__left-arm, &__right-arm {
+        width: 30%;
+        height: 95%;
+        top: 12%;
+        background-color: blue;
+    }
+
+    &__left-arm {
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    &__right-arm {
+        right: 0;
+        transform: translateX(100%);
+    }
+
+    &__left-leg, &__right-leg {
+        bottom: 0;
+        background-color: purple;
+        width: 30%;
+        height: 80%;
+    }
+
+    &__left-leg  { left: 50%;  transform: translate(-100%, 100%);}
+    &__right-leg { right: 50%; transform: translate(100%, 100%);}
+}
